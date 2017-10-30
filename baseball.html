@@ -122,7 +122,16 @@
         </article>
         <br/>
         <br/>
+        <footer>
+        <h4><center>Today is:</center></h4>    
+        <center><p id="date"></p></center>
+         
+            <script>
         
+                var d = new Date();
+                document.getElementById("date").innerHTML = d.toDateString();
+            </script>
+        </footer>
       
     </body>
     
