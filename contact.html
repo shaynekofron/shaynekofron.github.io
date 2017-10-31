@@ -10,7 +10,6 @@
     </head>
     
     <body>
-        <script type="text/javascript" src="script1.js"></script>
         <h1 align="center">Shayne's Sporting Goods</h1>
         <center><img src="https://www.pixelslogodesign.com/wp-content/uploads/2016/03/sports.png"></center>
         
@@ -40,22 +39,27 @@
         
 <p align="center"> Thank you for visiting Shayne's Sporting Good. We strive to deliver you the best experience possible. Please fill out this form and a Customer Service Representative will get back to you shortly to assit you with anything you may need. Have a great day! </p>
     
-<form name="contactSheet"  onsubmit="validateForm">
+    
+    
+<form name="contactSheet"  onsubmit="return validateForm()" method="GET">
      
-First Name: <br/> <input name="firstname" type="text"/>
+First Name:
+<input name="firstname" type="text"/>
 <br/>
 <br/>        
-Last name:<br/> <input name="lastname" type="text"/>  
+Last name:
+<input name="lastname" type="text"/>  
 <br/>
 <br/>    
-Email Address:<br/> <input name="emailaddress" type="text"/> 
+Email Address:
+<input name="emailaddress" type="text"/> 
 <br/>
 <br/>  
-<input checked="checked" name="Issue" type="radio" value="Question" />Question
+<input checked="checked" name="Issue" type="radio" value="question" />Question
 <br/>
-<input checked="checked" name="Issue" type="radio" value="Problem" />Problem
+<input checked="checked" name="Issue" type="radio" value="problem" />Problem
 <br/>
-<input checked="checked" name="Issue" type="radio" value="Order Status Update" />Order Status Update
+<input checked="checked" name="Issue" type="radio" value="rderstatusupdate" />Order Status Update
 <br/>
 <br/>
 Additional Comments:
@@ -84,5 +88,6 @@ Additional Comments:
             </script>
         </footer>
     </body>
+    <script src="script1.js"></script>
     </html>
 </DOCTYPE>
