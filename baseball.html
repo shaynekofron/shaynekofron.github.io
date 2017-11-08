@@ -21,19 +21,22 @@
          
             <h1 align="center"> Baseball Equipment </h1>
             
-    <nav> 
-    <a href = "index.html"> <font size = 5>Home</font> </a>
-    <br/>
-    <br/>    
-    <a href = "baseball.html"> <font size = 5>Baseball Equipment</font> </a>
-    <br/>
-    <br/>       
-    <a href = "soccer.html"> <font size = 5>Soccer Equipment</font> </a> 
-    <br/>
-    <br/>       
-    <a href = "contact.html"> <font size = 5></font>Contact Us</a> 
+    <nav>
+    <a href = "index.html">Home</a>
+    
         
-    </nav>
+    <div class="dropdown"> 
+    <button onclick="myFunction()" class="dropbtn">Equipment</button>
+    <div id="myDropdown" class="dropdown-content">
+                
+    <a href = "baseball.html">Baseball</a>  
+    <a href = "soccer.html">Soccer</a> 
+    </div> 
+    </div>
+        
+    <a href = "contact.html">Contact Us</a> 
+        
+    </nav> 
         
   
         
@@ -132,7 +135,7 @@
                 document.getElementById("date").innerHTML = d.toDateString();
             </script>
         </footer>
-      
+      <script src="script1.js"></script>  
     </body>
     
 </html>
