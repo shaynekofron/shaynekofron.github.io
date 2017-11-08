@@ -3,7 +3,9 @@
 <html>
 <head>
 <meta charset="utf-8">    
-<link rel="stylesheet" href="styles.css">     
+<link rel="stylesheet" href="styles.css"> 
+  
+    
 <title>Shayne's Sporting Goods</title>
 </head>
     
@@ -20,18 +22,25 @@
     
    
     <nav>
-    <a href = "index.html"> <font size = 5>Home</font> </a>
-    <br/>
-    <br/>        
-    <a href = "baseball.html"> <font size = 5>Baseball Equipment</font> </a>
-    <br/>
-    <br/>       
-    <a href = "soccer.html"> <font size = 5>Soccer Equipment</font> </a> 
-    <br/>
-    <br/>        
-    <a href = "contact.html"> <font size = 5></font>Contact Us</a> 
+    <a href = "index.html">Home</a>
+    
         
-    </nav>            
+    <div class="dropdown"> 
+    <button onclick="myFunction()" class="dropbtn">Equipment</button>
+    <div id="myDropdown" class="dropdown-content">
+                
+    <a href = "baseball.html">Baseball</a>  
+    <a href = "soccer.html">Soccer</a> 
+    </div> 
+    </div>
+        
+    <a href = "contact.html">Contact Us</a> 
+        
+    </nav>  
+    
+     
+    
+    
    <article>   
     
 <div class="content">
@@ -50,6 +59,7 @@
    
     </article>
     </header>
+    <script src="script1.js"></script>
     </body>
      <footer>
         <h4><center>Today is:</center></h4>    
