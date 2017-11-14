@@ -129,7 +129,7 @@ input
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 100px;
+  max-width: 500px;
   position: relative;
   margin: auto;
 }
@@ -137,10 +137,6 @@ input
 .mySlides {
     display: none;
 }
-
-
-
-
 
 
 .prev:hover, .next:hover {
