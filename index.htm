@@ -1,106 +1,44 @@
-<DOCTYPE html>
+<!doctype html>
 
-<html>
+<html lang="en">
 <head>
-<meta charset="utf-8">    
-<link rel="stylesheet" href="styles.css"> 
-  
-    
-<title>Shayne's Sporting Goods</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Shayne's Great Race</title>
 </head>
-    
-<body>
-<header>
-<h1 class="Goodsheader" align="center">Shayne's Sporting Goods</h1>
-    
-   <div class="slideshow-container">
-  <div class="mySlides fade">
-    <div class="numbertext"></div>
-    <img src="https://hdwallsource.com/img/2016/6/baseball-field-widescreen-wallpaper-50243-51931-hd-wallpapers.jpg" style="width:100%">
-    <div class="text">Be in style on the diamond</div>
-  </div>
 
-  <div class="mySlides fade">
-    <div class="numbertext"></div>
-    <img src="http://www.trumarkathletics.com/userfiles/home-slider/Soccer-field-slider.jpg" style="width:100%">
-    <div class="text">We offer all of your Soccer</div>
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext"></div>
-    <img src="https://media1.britannica.com/eb-media/89/193589-004-07370592.jpg" style="width:100%">
-    <div class="text">From Toddlers to Men</div>
-  </div>
-       
-  <div class="mySlides fade">
-    <div class="numbertext"></div>
-    <img src="https://espntheundefeated.files.wordpress.com/2017/03/soccer_6306441.jpg?w=3000&h=1406&crop=1&quality=70&strip=info" style="width:100%">
-    <div class="text">Men and Women's Gear</div>
-  </div>       
-
-
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-  <span class="dot" onclick="currentSlide(4)"></span>    
-</div>
-<br>
-    
+<body background="http://njphoenixhockey.com/wp-content/uploads/2015/08/Hockey-Rink.jpg" style="width: 1700px; height: 900px;"> 
    
-    <nav>
-    <a href = "index.html">Home</a>
-    
+    <header>
         
-    <div class="dropdown"> 
-    <button onclick="myFunction()" class="dropbtn">Equipment</button>
-    <div id="myDropdown" class="dropdown-content">
-                
-    <a href = "baseball.html">Baseball</a>  
-    <a href = "soccer.html">Soccer</a> 
-    </div> 
-    </div>
-        
-    <a href = "contact.html">Contact Us</a> 
-        
-    </nav>  
-    
-     
-    
-    
-   <article>   
-    
-<div class="content">
-    
-<p align="center">Welcome Sports lovers! Are you looking for the largest selection and highest quality sporting goods; well you have came to the right place. Here at Shayne's Sporting Good's we pride ourselves in providing you the highest quality when it comes to apparel, equipment, and whatever else sports related you may need, we'll be sure to have it for you! We provides supplies for about any sport from Baseball and soccer to cricket and bocce ball! </p>
-    
-
-</div>
-<br/>    
-<br/>
-<br/>
- 
-
-    
-   <center><img src="http://en.ytsports.cn/static/newsimage/20161221/14823065853883.jpg"></center>
-   
-    </article>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Traffic_light_red.png" 
+        onclick="beginRace(), turnGreen()" alt="Red Light" style="width: 190px; height: 190px;" id="redLight">
+    <div class="text">CLICK STOP LIGHT TO START RACE!</div>
+    <div class="text">SCROLL TO BOTTOM TO SEE WHO WON</div>   
     </header>
-    <script src="script1.js"></script>
-    </body>
-     <footer>
-        <h4><center>Today is:</center></h4>    
-        <center><p id="date"></p></center>
-         
-            <script>
-        
-                var d = new Date();
-                document.getElementById("date").innerHTML = d.toDateString();
-            </script>
-        </footer> 
-    </html>
-</DOCTYPE>
+    <br>
+    
+    <div id="bluesPlayer">
+        <img src="http://hockeypngs.com/wp-content/uploads/2016/06/Tarasenko-2.png"
+        alt="Blues" style="width: 300px; height: 250px;">
+    </div>
+    <br>
 
+    
+  
+    <div id="oilersPlayer">
+        <img src="http://hockeypngs.com/wp-content/uploads/2016/06/Connor-McDavid.png"
+        alt="Oilers" style="width: 320px; height: 270px;"> 
+    </div>
+
+    <div id="WinningPlayer">
+        <h1 align="center" >THE WINNER IS...</h1>
+        <img src="http://hockeypngs.com/wp-content/uploads/2016/06/Tarasenko-2.png" onclick="reset()" style="width: 430px; height: 300px;" id="winningID">
+    </div>
+
+   
+    
+</body>
+
+     
+<script src="script.js"></script>
+</html>
