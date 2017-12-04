@@ -1,198 +1,23 @@
-html
-{
-    font-family: Arial, Georgia, serif;
-}
 
+html {
+    font-family: Arial, Georgia, serif;
+    background-color: black;
+    color: black;
+}
 
 header
 {
-    color: white;
-    background-color: #006622;
+  
     text-align: center;
     font-size: 30px;
 }
 
-body
-{
-    background-color: #003311;
-    text-align: center;
+
+
+winningPlayer {
+    margin: auto; 300px;
+}
+
+div {
     color: white;
-}
-
-a:link, a:visited
-{
-    color: white;
-}
-
-
-a:hover
-{
-    background-color: dimgray;
-    color: darkblue;
-}
-
-.Goodsheader
-{
-    font-size: 30px;
-}
-h1 
-{
-    text-decoration: underline;
-    padding-top: 12px;
-    padding-bottom: 1px;
-}
-
-
-nav 
-{
-    float: left;
-    max-width: 145px;
-    margin: 0;
-    padding: 2em;
-}
-
-
-.content 
-{
-    color: white;
-    text-align: center;
-    font-size: 22px;
-    max-width: 1200px;
-    margin-left: 180px;
-    padding: 1em;
-}
-
-table, td, th
-{
-    border: 10px white;
-    text-align: center;
-}
-
-
-footer 
-{    
-    font-size: 10px;
-    color: white;
-    text-align: right;
-}
-
-article 
-{
-  margin-left: 75px;
-    border-left: 2px white;
-    padding: 1em;
-    overflow: hidden;
-}
-
-input 
-{
-    margin: 0 0 18px 0;
-}
-
-.dropbtn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    text-decoration: underline;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-.show {display:block;}
-
-* {box-sizing:border-box}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 500px;
-  position: relative;
-  margin: auto;
-}
-
-.mySlides {
-    display: none;
-}
-
-
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor:pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
 }
