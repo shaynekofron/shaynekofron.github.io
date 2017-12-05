@@ -1,23 +1,14 @@
-
 html {
-    font-family: Arial, Georgia, serif;
+     font-family: "Comic Sans MS", cursive, sans-serif;
     background-color: black;
     color: black;
 }
 
-header
-{
-  
+header {
     text-align: center;
-    font-size: 30px;
-}
-
-
-
-winningPlayer {
-    margin: auto; 300px;
 }
 
 div {
     color: white;
 }
+
