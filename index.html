@@ -2,38 +2,39 @@
 
 <html lang="en">
 <head>
+    <meta charset="utf-8">
     <link rel="stylesheet" href="styles.css">
     <title>Shayne's Great Race</title>
+   
 </head>
 
-<body background="http://njphoenixhockey.com/wp-content/uploads/2015/08/Hockey-Rink.jpg" style="width: 1700px; height: 900px;"> 
+<body background="http://njphoenixhockey.com/wp-content/uploads/2015/08/Hockey-Rink.jpg" style="width: 1700px; height: 850px;"> 
    
     <header>
         
         <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Traffic_light_red.png" 
-        onclick="beginRace(), turnGreen()" alt="Red Light" style="width: 190px; height: 190px;" id="redLight">
+        onclick="startRace(), turnGreen()" alt="Red Light" style="width: 190px; height: 190px;" id="redLight">
     <div class="text">CLICK STOP LIGHT TO START RACE!</div>
     <div class="text">SCROLL TO BOTTOM TO SEE WHO WON</div>   
     </header>
-    <br>
-    
+   
     <div id="bluesPlayer">
         <img src="http://hockeypngs.com/wp-content/uploads/2016/06/Tarasenko-2.png"
-        alt="Blues" style="width: 300px; height: 250px;">
+        alt="Blues Player" style="width: 300px; height: 250px;">
     </div>
     <br>
-
     
-  
     <div id="oilersPlayer">
         <img src="http://hockeypngs.com/wp-content/uploads/2016/06/Connor-McDavid.png"
-        alt="Oilers" style="width: 320px; height: 270px;"> 
+        alt="Oilers Player" style="width: 320px; height: 270px;"> 
     </div>
-
-    <div id="WinningPlayer">
+    
+       <div id="WinningSkater">
         <h1 align="center" >THE WINNER IS...</h1>
-        <img src="http://hockeypngs.com/wp-content/uploads/2016/06/Tarasenko-2.png" onclick="reset()" style="width: 430px; height: 300px;" id="winningID">
+        <img align="center" src="http://hockeypngs.com/wp-content/uploads/2016/06/Tarasenko-2.png" onclick="reset()" style="width: 600px; height: 290px;" id="winningPlayer">
     </div>
+  
+ 
 
    
     
