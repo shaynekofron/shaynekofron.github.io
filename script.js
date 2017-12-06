@@ -1,4 +1,4 @@
-
+//assign varibles to light, each player and winner
 var image = document.getElementById("redLight");
 var bluesPlayer = document.getElementById("bluesPlayer");
 var oilersPlayer = document.getElementById("oilersPlayer");
@@ -6,9 +6,9 @@ var winningSkater = document.getElementById("WinningSkater");
 winningSkater.style.display = 'none';
 
 
-
+//assign random number
     var number = Math.random() * 200;
-    var number2 = Math.random() * 200;
+    var number1 = Math.random() * 200;
     var raceStarted = false;
 
 function turnGreen()
@@ -22,25 +22,26 @@ function startRace()
     raceStarted = true;
 
     setTimeout(function () {
-        var newNumber = (Math.random() * 200) + number;
-        var newNumber2 = (Math.random() * 200) + number2;
+        var newNumber = ((Math.random() * 200)+5) + number;
+        var newNumber1 = ((Math.random() * 200)+5) + number1;
         
         bluesPlayer.style.marginLeft = newNumber + 'px';
                 
-        oilersPlayer.style.marginLeft = newNumber2 + 'px';
+        oilersPlayer.style.marginLeft = newNumber1 + 'px';
         
         number = newNumber;
-        number2 = newNumber2;
+        number1 = newNumber1;
         
         
         
                 var bluesDistance = bluesPlayer.style.marginLeft.slice(0, -4);
                 var oilersDistance = oilersPlayer.style.marginLeft.slice(0, -4);
 
-                var width = screen.width;
-        
+      
         
            //Displays winner of race
+               var width = screen.width;
+        
         if (bluesDistance >= width - 50)
         {
             winningSkater.style.display = 'list-item';
@@ -51,6 +52,7 @@ function startRace()
         else if (oilersDistance >= width - 50)
         {           
             document.getElementById("winningPlayer").src  = "http://hockeypngs.com/wp-content/uploads/2016/06/Connor-McDavid.png";
+            
             winningSkater.style.display = 'list-item';                
         }
         
@@ -73,7 +75,7 @@ function reset()
     bluesDistance = 0;
     oilersDistance = 0;
     newNumber = 0;
-    newNumber2 = 0;
+    newNumber1 = 0;
     number = 0;
-    number2 = 0;
+    number1 = 0;
 }
