@@ -1,19 +1,18 @@
 html {
      font-family: "Comic Sans MS", sans-serif;
-    background-color: black;
-    color: black;
-}
-
-header {
-    text-align: center;
+     color: black;
 }
 
 div {
     color: white;
 }
 
-h1 {
-    font-family: "Comic Sans MS", sans-serif;
-    color:black
+header {
+    text-align: left;
 }
 
+
+h1 {
+    font-family: "Comic Sans MS", sans-serif;
+    color:black;
+}
