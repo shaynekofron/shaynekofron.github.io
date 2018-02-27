@@ -1,45 +1,74 @@
-<!doctype html>
-
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="styles.css">
-    <title>Shayne's Great Race</title>
-   
-</head>
-
-<body background="http://njphoenixhockey.com/wp-content/uploads/2015/08/Hockey-Rink.jpg" style="width: 1700px; height: 850px;"> 
-   
-    <header>
-        
-        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Traffic_light_red.png" 
-        onclick="startRace(), turnGreen()" alt="Red Light" style="width: 190px; height: 190px;" id="redLight">
-              <img src="http://www.scottradecenter.com/assets/img/Oilers.jpg"
-                style="width: 190px; height:190px:">
-    <div class="text">1. CLICK STOP LIGHT TO START RACE!</div>
-        
-    <div class="text">2. CLICK WINNING SKATER TO RACE AGAIN</div>      
-    </header>
-   
-    <div id="bluesPlayer">
-        <img src="http://hockeypngs.com/wp-content/uploads/2016/06/Tarasenko-2.png"
-        style="width: 300px; height: 250px;">
-    </div>
-    
-        <div id="WinningSkater">    
-        <h1 align="center" >WHOSE FASTER? BLUES OR OILERS?</h1>
-        <img align="center" src="http://hockeypngs.com/wp-content/uploads/2016/06/Tarasenko-2.png" onclick="reset()" style="width: 600px; height: 290px;" id="winningPlayer">
-    </div>
-    
-    <div id="oilersPlayer">
-        <img src="http://hockeypngs.com/wp-content/uploads/2016/06/Connor-McDavid.png"
-         style="width: 320px; height: 270px;"> 
-    </div>
-    
-  
-    
-</body>
-
+    <title>jQuery Assignment CIS 475</title>
+    <meta name="viewport" content="width=device-width, 
+initial-scale=1">
+   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> 
      
-<script src="script.js"></script>
+    </head>
+    <body>
+    <div data-role="page" id="homepage">
+        
+        <div data-role="header">
+        <h1>Home Page</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="homepage" class="ui-btn-active ui-state-persist" data-icon="home">Home Page</a></li>
+                    <li><a href="#contactus" data-icon="grid">Contact Us</a></li>
+                </ul>
+            </div>
+         </div>
+<!--Home-->
+    <div data-role="content">
+        <p><center>Need IT support or help building webpages for your business? You've came to the right place. Shayne's IT Solutions is here for any of your technology needs.<img src="https://www.talentcons.com/wp-content/uploads/2017/08/IT_Service.jpg" style="width=.03%; height=.03%;"></center>
+        </p>
+        
+            <p class="orientation"> </p>
+           </div>
+        <div data-role="footer">
+        <h1>SK Information Technology Solutions</h1>
+        <h1><a href="#">710 Lonely Lodge Dr</a></h1>
+		<h1><a href="#">skofron@ITsolutions.com</a></h1>
+        <h1>24/7 Support Line: 314-863-0721</h1>    
+        </div>
+        </div>
+ <!--Content-->  
+        
+    <div data-role="page" id="contactus">
+	<div data-role="header">
+		<h1>Contact Us</h1>
+		<div data-role="navbar">
+	        <ul>
+	        	
+	            <li><a href="#homepage" data-icon="home">Home Page</a></li>
+	            <li><a href="#contactus" class="ui-btn-active ui-state-persist" data-icon="grid">Contact Us</a></li>    
+                </ul>
+            </div>
+            </div>
+            
+            <div data-role="content">
+            <p><center>Thank you for visiting Shayne's IT Solutions. We strive to deliver you the best experience possible. Please call us at the number below a Customer Service Representative will get back to you shortly to assit you with anything you may need. Have a great day! <img src="http://www.toppropertyshop.com/wp-content/uploads/2018/02/TPS-CONTACTUS.jpg" style="width=.03%; height=.03%"></center></p>
+                <p class="orientation"></p>
+            </div>
+            
+            <div data-role="footer">
+        <h1>SK Information Technology Solutions</h1>
+        <h1><a href="#">710 Lonely Lodge Dr</a></h1>
+		<h1><a href="#">skofron@ITsolutions.com</a></h1>
+        <h1>24/7 Support Line: 314-863-0721</h1>
+	   </div>
+        
+        </div>
+<!--Landscape Mode-->         
+        <script>
+         $(window).on('orientationchange', function(event) { 
+    $('.orientation').html('You are viewing in <em>' + event.orientation + '</em> mode. Portrait mode not supperted on this device');
+	});
+	$(window).orientationchange();
+        </script>
+   
+    </body>
 </html>
