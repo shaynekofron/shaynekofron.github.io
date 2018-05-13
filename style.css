@@ -1,78 +1,11 @@
-html
+*
 {
-    font-family: Arial, Georgia, serif;
+	padding: 0;
+	margin: 0;
 }
-
-
-header
+canvas
 {
-    color: white;
-    background-color: #006622;
-    text-align: center;
-    font-size: 30px;
-}
-
-body
-{
-    background-color: #003311;
-    text-align: center;
-    color: white;
-}
-
-a:link, a:visited
-{
-    color: white;
-}
-
-
-a:hover
-{
-    background-color: dimgray;
-    color: darkblue;
-}
-
-h1 
-{
-    text-decoration: underline;
-    padding-top: 12px;
-    padding-bottom: 1px;
-}
-
-
-.nav 
-{
-    float: left;
-    max-width: 145px;
-    margin: 0;
-    padding: 1em;
-}
-
-
-.content 
-{
-    color: white;
-    text-align: center;
-    font-size: 22px;
-    max-width: 1200px;
-    margin-left: 180px;
-    padding: 1em;
-}
-
-table, td, th
-{
-    border: 10px white;
-    text-align: center;
-}
-
-
-footer 
-{    
-    font-size: 10px;
-    color: white;
-    text-align: right;
-}
-
-input 
-{
-    margin: 0 0 18px 0;
+	background-color: #eee;
+	display: block;
+	margin: 0 auto;
 }
